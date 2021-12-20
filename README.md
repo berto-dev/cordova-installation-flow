@@ -130,68 +130,9 @@ node js installation:<br>
 
   <br>
 
-- open you project app folder and check cofing.xml <br>
-```<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.maremapp.byshapedigital" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-
-	<!-- basic settings -->
-	
-	<name>NAMEOFAPP</name>
-	<content src="index.html" />
-	<description>YOURDESCRIPTION</description>
-	<author email="DEVAUTHOR@MAIL.XXX" href="http://DEVAUTHOR.XXX">DEVAUTHORNAME</author>
-	
-	<!-- screen settings -->
-	
-	<preference name="BackgroundColor" value="#ffffff" />
-	<preference name="Fullscreen" value="true" />
-	<preference name="Orientation" value="portrait" />
-	<preference name="DisallowOverscroll" value="true" />
-	<preference name="UIWebViewBounce" value="false" />
-	<preference name="WebViewBounce" value="false" />
-	<preference name="KeyboardDisplayRequiresUserAction" value="true" />
-	
-	<!--app access settings (more on: https://github.com/apache/cordova-plugin-whitelist) -->
-	
-	<plugin name="cordova-plugin-device" spec="1" />
-	<plugin name="cordova-plugin-whitelist" spec="1" />
-	
-	<access origin="*" />
-	<access origin="cdvfile://*"/>
-	<access origin="file:///*"/>
-	<access origin="file:///persistent/*"/>
-	<access origin="https://yourlocalhost/*"/>
-	<access origin="https://yourlocalhost:3000/*"/> 
-	
-	<allow-intent href="http://*/*" />
-	<allow-intent href="https://*/*" />
-	<allow-intent href="tel:*" />
-	<allow-intent href="sms:*" />
-	<allow-intent href="mailto:*" />
-	<allow-intent href="geo:*" />
-	
-	<platform name="android">
-	    <allow-intent href="market:*" />
-	    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
-	    <preference name="AndroidExtraFilesystems" value="assets, root, files, cache, sdcard, cache-external, files-external" />
-	    <icon src="..." />
-	</platform>
-	
-	<platform name="ios">
-	    <allow-intent href="itms:*" />
-	    <allow-intent href="itms-apps:*" />
-	    <preference name="iosPersistentFileLocation" value="Compatibility" />
-	    <preference name="iosExtraFilesystems" value="assets, root, files,cache, sdcard, cache-external, files-external" />
-	    <icon src="...">
-	</platform>
-
-</widget>
-```
-
-<br>
-
-for make all icons see [cordova-icon](https://github.com/AlexDisler/cordova-icon): <br>
-:: `npm install cordova-icon -g`
+- open you project app folder and check config.xml and set basics inside similar to [demo config.xml](https://github.com/bertz-tech/cordova-installation-flow/blob/main/resources/config.xml) <br> 
+    for make all icons see [cordova-icon](https://github.com/AlexDisler/cordova-icon): <br>
+    :: `npm install cordova-icon -g`
 
 
 - ... waiting next ...<br>
