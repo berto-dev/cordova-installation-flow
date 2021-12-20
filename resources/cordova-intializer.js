@@ -1,3 +1,10 @@
+<!--
+    important note:
+    html of this file is based on deprecated custom framework
+    It's obivious you can make all in any style you want
+-->
+
+
 const app = {
 
     initialize: function()
