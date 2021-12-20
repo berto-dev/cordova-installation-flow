@@ -107,18 +107,21 @@ node js installation:<br>
     :: `cordova plugin add cordova-plugin-browsersync-gen2 --save-dev`<br>
     rapid check... run cordova web server:<br>:: `cordova run --live-reload`<br>
   - install [files](https://github.com/apache/cordova-plugin-file/)<br>
-    :: cordova plugin add cordova-plugin-file <br>
-  - install [battery status](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-battery-status/) <br>:: cordova plugin add cordova-plugin-battery-status
+    :: `cordova plugin add cordova-plugin-file` <br>
+  - install [battery status](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-battery-status/) <br>:: `cordova plugin add cordova-plugin-battery-status`
   - install [Plug-Device](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-device/) <br>
-    :: cordova plugin add cordova-plugin-device <br>
-  - install [Net Info](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-network-information/) <br>::  cordova plugin add cordova-plugin-network-information<br>
-  - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>:: cordova plugin add cordova-plugin-geolocation <br>
+    :: `cordova plugin add cordova-plugin-device` <br>
+  - install [Net Info](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-network-information/) <br>
+    ::  `cordova plugin add cordova-plugin-network-information` <br>
+  - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>:: `cordova plugin add cordova-plugin-geolocation` <br>
   - install [Policy Parse](https://npm.io/package/csp-parse) <br>
-    :: npm install csp-parse<br>
-  - install [Cordova Cache](https://www.npmjs.com/package/cordova-plugin-cache) <br>:: npm i cordova-plugin-cache
+    :: `npm install csp-parse` <br>
+  - install [Cordova Cache](https://www.npmjs.com/package/cordova-plugin-cache) <br>
+    :: ` npm i cordova-plugin-cache` <br>
   - if necessary install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) <br>
-    :: cordova plugin add cordova-plugin-whitelist <br>
-
-  - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>:: cordova plugin add cordova-plugin-vibration <br><br><br>
-
-<br>... in arrived
+    :: `cordova plugin add cordova-plugin-whitelist` <br>
+  - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>
+     :: `cordova plugin add cordova-plugin-vibration` <br>
+     <br>
+     <br>
+     <br>... waiting next ...
