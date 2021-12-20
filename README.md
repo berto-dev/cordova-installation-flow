@@ -132,7 +132,9 @@ node js installation:<br>
 
 - open you project app folder and check config.xml and set basics inside similar to [demo config.xml](https://github.com/bertz-tech/cordova-installation-flow/blob/main/resources/config.xml) <br> 
     for make all icons see [cordova-icon](https://github.com/AlexDisler/cordova-icon): <br>
-    :: `npm install cordova-icon -g`
+    :: `npm install cordova-icon -g` <br>
+    
+- use [cordova init](https://github.com/bertz-tech/cordova-installation-flow/blob/main/resources/cordova-intializer.js) for launch app and plugin... and  so add [statuts bar](https://github.com/bertz-tech/cordova-installation-flow/blob/main/resources/app-status-bar.html) and [system info](https://github.com/bertz-tech/cordova-installation-flow/blob/main/resources/app-system-info.html) 
 
 
 - ... waiting next ...<br>
