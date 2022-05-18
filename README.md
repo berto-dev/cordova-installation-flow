@@ -105,7 +105,20 @@ node js installation:<br>
 
   - install [browser sync 2](cordova plugin add cordova-plugin-browsersync-gen2) for --live-reload: <br>
     :: `cordova plugin add cordova-plugin-browsersync-gen2 --save-dev`<br>
-    rapid check... run cordova web server:<br>:: `cordova run --live-reload`<br>
+    rapid check... run cordova web server:<br>:: `cordova run --live-reload`<br><br>
+    ```
+      in case of windows security stop: "impossible to execute a script PS1 in Powershell"
+      open in admin mode powershell and the system32 folder.
+      now write:
+
+      Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+      other option:
+        restricted (probably currently)
+        unrestricted
+        remotesigned (good fo server and cordova)
+        allsigned (not raccomended)```
+
   - install [files](https://github.com/apache/cordova-plugin-file/)<br>
     :: `cordova plugin add cordova-plugin-file` <br>
   - install [battery status](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-battery-status/) <br>:: `cordova plugin add cordova-plugin-battery-status`
