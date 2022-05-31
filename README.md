@@ -28,9 +28,10 @@ It's based on windows/linux workflow<br>
     - 2 Click the properties
     - 3 Select Advanced System Settings
     - Select Environment Variables:
-      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk1.8.0_131
-      - on __USER VARIABLE__ and click on PATH and add:
-        - %JAVAHOME%\bin
+      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk-18.0.1.1 (or latest your path)
+      - on __SYSTEM VARIABLE__ and __USER VARIABLE__ and click on PATH and add:
+        - %JAVAHOME%\bin<br>
+          if necessary:
         - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
         - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
         - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
