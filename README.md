@@ -28,7 +28,7 @@ It's based on windows/linux workflow<br>
     - 2 Click the properties
     - 3 Select Advanced System Settings
     - Select Environment Variables:
-      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk1.8.0_131\bin
+      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk1.8.0_131
       - on __USER VARIABLE__ and click on PATH and add:
         - %JAVAHOME%\bin
         - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
