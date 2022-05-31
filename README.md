@@ -41,7 +41,7 @@ It's based on windows/linux workflow<br>
   - on linux/mac: <br>
     get it on: https://gradle.org/install/ and open env with: *Step 3. Configure your system environment*
 
-  - in windows: copy https://gradle.org/next-steps/?version=7.3.1&format=bin into C:\Program Files\Gradle\bin (or simple C: Grandle) and open env with:<br>
+  - in windows: [*](https://gradle.org/install/) copy https://gradle.org/next-steps/?version=7.3.1&format=bin into C:\Program Files\Gradle\bin (or simple C: Grandle) and open env with:<br>
 
     open setting on search type "*var*" click on set variable, add "*C:\ YOURPATH Gradle\bin*" on *PATH*
     
