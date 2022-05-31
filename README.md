@@ -23,7 +23,7 @@ It's based on windows/linux workflow<br>
 - install Java JDK :<br>
 
   - get the windows/linux [installer resource](https://www.oracle.com/java/technologies/downloads)<br>
-  - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) (similar to step below)
+  - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
   - open [env java](https://www.java.com/en/download/help/path.html) on windows: <br>
     open setting on search type "*var*" click on set variable, add<br>
     `%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools`<br>
