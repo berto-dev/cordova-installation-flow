@@ -35,6 +35,7 @@ It's based on windows/linux workflow<br>
         - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
         - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
         - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
+  - in windows [SKD](https://www.youtube.com/watch?v=c7_JxGX8oxc) 
 
 - install grandle:
 
