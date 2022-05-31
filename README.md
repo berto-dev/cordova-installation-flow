@@ -23,7 +23,7 @@ It's based on windows/linux workflow<br>
 - install Java JDK :<br>
 
   - get the windows/linux [installer resource](https://www.oracle.com/java/technologies/downloads)<br>
-  - open env java on windows: <br>
+  - open [env java](https://www.java.com/en/download/help/path.html) on windows: <br>
     open setting on search type "*var*" click on set variable, add<br>
     `%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools`<br>
     `%USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin`<br>
