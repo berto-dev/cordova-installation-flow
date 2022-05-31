@@ -24,11 +24,16 @@ It's based on windows/linux workflow<br>
 
   - get the windows/linux [installer resource](https://www.oracle.com/java/technologies/downloads)<br>
   - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
-  - open [env java](https://www.java.com/en/download/help/path.html) on windows: <br>
-    open setting on search type "*var*" click on set variable, add<br>
-    `%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools`<br>
-    `%USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin`<br>
-    `%USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator`<br><br>
+    - 1 Right click Computer
+    - 2 Click the properties
+    - 3 Select Advanced System Settings
+    - Select Environment Variables:
+      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk1.8.0_131\bin
+      - on __USER VARIABLE__ and click on PATH and add:
+        - %JAVAHOME%\bin
+        - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
+        - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
+        - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
 
 - install grandle:
 
