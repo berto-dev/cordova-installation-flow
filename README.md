@@ -28,14 +28,20 @@ It's based on windows/linux workflow<br>
     - 2 Click the properties
     - 3 Select Advanced System Settings
     - Select Environment Variables:
-      - on __SYSTEM VARIABLE__ click new and add JAVA_HOME and C:\Program Files\Java\jdk-18.0.1.1 (or latest your path)
-      - on __SYSTEM VARIABLE__ and __USER VARIABLE__ and click on PATH and add:
+      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and C:\Program Files\Java\jdk-18.0.1.1 (or latest your path)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
+      - on *SYSTEM VARIABLE* click new and add *JRE_HOME* and C:\Program Files\Java\jre1.8.0_333 (put below all)
+      - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and -Xmx512M
+      - on *SYSTEM VARIABLE* and *USER VARIABLE* and click on PATH and add:
         - %JAVAHOME%\bin<br>
           if necessary:
         - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
         - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
         - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
   - in windows [SKD](https://www.youtube.com/watch?v=c7_JxGX8oxc) 
+
+// not recognized android? cordova platform add android@7.1.1
 
 - install grandle:
 
