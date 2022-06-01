@@ -39,11 +39,8 @@ It's based on windows/linux workflow<br>
         - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
         - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
         - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
-  - in windows [SKD](https://www.youtube.com/watch?v=c7_JxGX8oxc) 
 
-// not recognized android? cordova platform add android@7.1.1
-
-- install grandle:
+- install gradle:
 
   - on linux/mac: <br>
     get it on: https://gradle.org/install/ and open env with: *Step 3. Configure your system environment*
@@ -56,6 +53,16 @@ It's based on windows/linux workflow<br>
 - open terminal and verify:<br>
   :: `java -version` <br>
   :: `gradle -v`<br>
+
+
+- ANDROID SDK ASSET (in windows):<br>
+  /!\ NOT GET android 10 for retrocompatibility issue! Remain in 9 (the classic released in cordova installation) and...
+  - download and open android studio;
+  - click arrow on "More Actions" > SDKManager ([OR ALTERNATIVE: SKD](https://www.youtube.com/watch?v=c7_JxGX8oxc)):
+  - open android studio, go to "Android SDK", remove all SKD Platform and check only *Android API 32 (Sv2)* and *Android9(Pie)*
+  - now on SDK Tools tab remove all! and check only 3.0.3 version.
+  - test it in cleaned, new, cordova app with cordova build android; not recognized? cordova platform add android@7.1.1 and readd the 9.1;
+
 
 <br>
 
