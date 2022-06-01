@@ -157,6 +157,8 @@ node js installation:<br>
     :: ` npm i cordova-plugin-cache` <br>
   - if necessary install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) <br>
     :: `cordova plugin add cordova-plugin-whitelist` <br>
+  - install [browser](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-inappbrowser/) <br>
+     :: `cordova plugin add cordova-plugin-inappbrowser` <br>
   - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>
      :: `cordova plugin add cordova-plugin-vibration` <br>
      <br>
