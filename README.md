@@ -147,7 +147,10 @@ node js installation:<br>
     :: `cordova plugin add cordova-plugin-device` <br>
   - install [Net Info](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-network-information/) <br>
     ::  `cordova plugin add cordova-plugin-network-information` <br>
-  - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>:: `cordova plugin add cordova-plugin-geolocation` <br>
+  - install [Globalization](https://github.com/apache/cordova-plugin-globalization) <br>
+    ::  `cordova plugin add cordova-plugin-globalization`
+  - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>
+    :: `cordova plugin add cordova-plugin-geolocation` <br>
   - install [Policy Parse](https://npm.io/package/csp-parse) <br>
     :: `npm install csp-parse` <br>
   - install [Cordova Cache](https://www.npmjs.com/package/cordova-plugin-cache) <br>
