@@ -162,6 +162,8 @@ node js installation:<br>
   - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>
      :: `cordova plugin add cordova-plugin-vibration` <br>
      <br>
+  - if you can:
+    - [cleartext, image comunication fix for android](cordova plugin add cordova-plugin-cleartext)
   - other possible: 
      - [camera](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-camera/index.html) <br>
      - [media capture](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-media-capture/index.html) <br>
