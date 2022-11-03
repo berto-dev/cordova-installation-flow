@@ -163,7 +163,7 @@ node js installation:<br>
      :: `cordova plugin add cordova-plugin-vibration` <br>
      <br>
   - if you can:
-    - [cleartext, image comunication fix for android](cordova plugin add cordova-plugin-cleartext)
+     - image comunication fix for android -> [cleartext traffic 1](https://www.npmjs.com/package/cordova-plugin-enable-cleartext-traffic) or [cleartext traffic 2](https://www.npmjs.com/package/cordova-plugin-cleartext) or [Stackoverflow discussion](https://stackoverflow.com/questions/54752716/why-am-i-seeing-neterr-cleartext-not-permitted-errors-after-upgrading-to-cordo)
   - other possible: 
      - [camera](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-camera/index.html) <br>
      - [media capture](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-media-capture/index.html) <br>
