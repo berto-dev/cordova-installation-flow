@@ -96,7 +96,7 @@ node js installation:<br>
 
 - on windows: <br>
 
-  ​		[get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and after reboot if system run command:<br>		:: `nvm install node` or `nvm install --lts`<br>		after install:<br>		:: `nvm use --lts`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
+  ​		[get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and after reboot if system run command:<br>		:: `nvm install --lts` or `nvm install latest`<br>		after install:<br>		:: `nvm use --lts` or `nvm use latest`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
   ​		Check node istallation:<br>		:: `node -v`<br>		check if NPM is installed:<br>
   ​		:: `npm -v` <br>		if not installer run command:
   ​		:: `npm install -g npm@latest`<br>
@@ -106,7 +106,7 @@ node js installation:<br>
   ​	coming soon<br><br><br>
 
 - Now cordova assets:<br>
-   	:: `npm install -g cordova`<br>
+   	:: `npm i -g cordova` (or npm i -g cordova@10.0.0 or 11.0.0 [or other version](https://www.npmjs.com/package/cordova))<br>
    		see all warning of audit fix, if you can...<br>
    		:: `npm audit fix` <br>
    		after repair all deprecated, check cordova<br>
