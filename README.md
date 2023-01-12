@@ -63,7 +63,6 @@ It's based on windows/linux workflow<br>
   - now on SDK Tools tab remove all! and check only 3.0.3 version.
   - test it in cleaned, new, cordova app with cordova build android; not recognized? cordova platform add android@7.1.1 and readd the 9.1;
 
-
 <br>
 
 ### - Install **IOS Assets**:
@@ -97,7 +96,7 @@ node js installation:<br>
 
 - on windows: <br>
 
-  ​		[get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and run command:<br>		:: `nvm install node` or `nvm install --lts`<br>		after install:<br>		:: `nvm use --lts`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
+  ​		[get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and after reboot if system run command:<br>		:: `nvm install node` or `nvm install --lts`<br>		after install:<br>		:: `nvm use --lts`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
   ​		Check node istallation:<br>		:: `node -v`<br>		check if NPM is installed:<br>
   ​		:: `npm -v` <br>		if not installer run command:
   ​		:: `npm install -g npm@latest`<br>
