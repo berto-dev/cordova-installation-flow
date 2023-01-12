@@ -19,43 +19,42 @@ It's based on windows/linux workflow<br>
 ### - Install **Andriod Assets**:<br>
 <sup>[(old way here)](https://www.andreszsogon.com/setting-up-your-environment-for-apache-cordova-apps/)</sup><br>
 
-- install Java JDK : <br>
+- install Java JDK (tested on windows) : <br>
 
-  - get the windows/linux [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
+  - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
     <sub><sup>[retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
-  - [install android studio](https://developer.android.com/studio) for get <i>Andorid SDK & Build Tools</i><br>
-    <sub><sup>not tested: you can try to install [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) `/!\ Android SDK was removed by Google to impose him IDE`</sup></sub>
+  - SDK and tools:
+    - ~~[download "Command line tools only"](https://developer.android.com/studio/#downloads) (it's on end of page) and copy it into "%ProgramFiles%\Android\"<br>open cmd (administrator) and enter in folder `cd %ProgramFiles%\Android\cmdline-tools\bin` and get list with <kbd>sdkmanager --list</kbd>, so digit `sdkmanager "platform-tools" "platforms;android-NN"` (NN is latest number you can see)~~
+    - [install android studio](https://developer.android.com/studio)
+    - [copy Platform Tools](https://developer.android.com/studio/releases/platform-tools) into "%USERPROFILE%\AppData\Local\Android\sdk\" <i>(if not exist, make it)</i>
+    -  lounch android studio and finish all steps (or bypass it and go in welcome screen into "more actions/sdk manager") for automatic install latest sdk
   - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
     - Right click Computer
     - Click the properties
     - Select Advanced System Settings
     - Select Environment Variables:
-      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and C:\Program Files\Java\jdk-18.0.1.1 (or latest your path)
-      - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
-      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
-      - ~~on *SYSTEM VARIABLE* click new and add *JRE_HOME* and C:\Program Files\Java\jre1.8.0_333 (put below all)~~ (maybe useless)
-      - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and -Xmx512M
-      - on *SYSTEM VARIABLE* and *USER VARIABLE* and click on PATH and add:
-        - %JAVAHOME%\bin<br>
+      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and `%ProgramFiles%\Java\jdk-18.0.1.1` (or latest your path)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and `%LOCALAPPDATA%\Android\Sdk` (put below all)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\Sdk` (put below all)
+      - on *SYSTEM VARIABLE* click new and add *JRE_HOME* and `%ProgramFiles%\Android\Android Studio\jre` (put below all)
+      - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and `-Xmx512M`
+      - on *SYSTEM VARIABLE* click on *PATH* and add:
+        - `%JAVAHOME%\bin`<br>
           if necessary:
-        - %USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
-        - %USERPROFILE%\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
-        - %USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator
+        - `%LOCALAPPDATA%\Android\Sdk\platform-tools`
+        - `%LOCALAPPDATA%\Android\Sdk\tools\emulator`
+        - ~~`%LOCALAPPDATA%\Android\Sdk\cmdline-tools\latest\bin`~~
+    - open terminal and verify `java -version`
 
-- install gradle:
+- install gradle binary:
 
   - on linux/mac: <br>
-    get it on: https://gradle.org/install/ and open env with: *Step 3. Configure your system environment*
+    get it on: [gradle.org/install "Binary-only"](https://gradle.org/install/) and set it "Linux & MacOS users" on page open env with: *Step 3. Configure your system environment*
 
-  - in windows: [*](https://gradle.org/install/) copy https://gradle.org/next-steps/?version=7.3.1&format=bin into C:\Program Files\Gradle\bin (or simple C: Grandle) and open env with:<br>
+  - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and open env with:<br>
 
-    open setting on search type "*var*" click on set variable, add "*C:\ YOURPATH Gradle\bin*" on *PATH*
-    
-
-- open terminal and verify:<br>
-  :: `java -version` <br>
-  :: `gradle -v`<br>
-
+    - on *SYSTEM VARIABLE* click on *PATH* and add "%ProgramFiles%\Gradle\bin"
+    - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v`
 
 - ANDROID SDK ASSET (in windows):<br>
   /!\ NOT GET android 10 for retrocompatibility issue! Remain in 9 (the classic released in cordova installation) and...
