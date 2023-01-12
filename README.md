@@ -8,7 +8,7 @@
 A pipelines it's a simple step by step roles for make somethings better.<br>
 This file is a simple annotations for custom installation of  basic environment for *cordova + cordova assets + extras*.<br>
 <br>
-Important note: **it's under costruction and based on personal use.**<br>
+Important note: <b>it's under costruction and based on personal use.</b><br>
 <br>
 A simple flow for installation of ex asset for cordova<br>
 It's based on windows/linux workflow<br>
@@ -16,22 +16,24 @@ It's based on windows/linux workflow<br>
 
 ---
 
-### - Install **Andriod Assets**:
+### - Install **Andriod Assets**:<br>
+<sup>[(old way here)](https://www.andreszsogon.com/setting-up-your-environment-for-apache-cordova-apps/)</sup><br>
 
-<br>
+- install Java JDK : <br>
 
-- install Java JDK :<br>
-
-  - get the windows/linux [installer resource](https://www.oracle.com/java/technologies/downloads)<br>
+  - get the windows/linux [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
+    <sub><sup>[retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
+  - [install android studio](https://developer.android.com/studio) for get <i>Andorid SDK & Build Tools</i><br>
+    <sub><sup>not tested: you can try to install [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools) `/!\ Android SDK was removed by Google to impose him IDE`</sup></sub>
   - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
-    - 1 Right click Computer
-    - 2 Click the properties
-    - 3 Select Advanced System Settings
+    - Right click Computer
+    - Click the properties
+    - Select Advanced System Settings
     - Select Environment Variables:
       - on *SYSTEM VARIABLE* click new and add JAVA_HOME and C:\Program Files\Java\jdk-18.0.1.1 (or latest your path)
       - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
       - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and %USERPROFILE%\AppData\Local\Android\Sdk (put below all)
-      - on *SYSTEM VARIABLE* click new and add *JRE_HOME* and C:\Program Files\Java\jre1.8.0_333 (put below all)
+      - ~~on *SYSTEM VARIABLE* click new and add *JRE_HOME* and C:\Program Files\Java\jre1.8.0_333 (put below all)~~ (maybe useless)
       - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and -Xmx512M
       - on *SYSTEM VARIABLE* and *USER VARIABLE* and click on PATH and add:
         - %JAVAHOME%\bin<br>
