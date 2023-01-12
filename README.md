@@ -19,7 +19,7 @@ It's based on windows/linux workflow<br>
 ### - Install **Andriod Assets**:<br>
 <sup>[(old way here)](https://www.andreszsogon.com/setting-up-your-environment-for-apache-cordova-apps/)</sup><br>
 
-- install Java JDK (tested on windows) : <br>
+- install Java JDK (tested on windows) (under test in 2023) : <br>
 
   - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
     <sub><sup>[retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
@@ -51,12 +51,11 @@ It's based on windows/linux workflow<br>
   - on linux/mac: <br>
     get it on: [gradle.org/install "Binary-only"](https://gradle.org/install/) and set it "Linux & MacOS users" on page open env with: *Step 3. Configure your system environment*
 
-  - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and open env with:<br>
-
+  - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and...<br>
     - on *SYSTEM VARIABLE* click on *PATH* and add "%ProgramFiles%\Gradle\bin"
     - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v`
 
-- ANDROID SDK ASSET (in windows):<br>
+- ANDROID SDK ASSET (in windows) (under test):<br>
   /!\ NOT GET android 10 for retrocompatibility issue! Remain in 9 (the classic released in cordova installation) and...
   - download and open android studio;
   - click arrow on "More Actions" > SDKManager ([OR ALTERNATIVE: SKD](https://www.youtube.com/watch?v=c7_JxGX8oxc)):
