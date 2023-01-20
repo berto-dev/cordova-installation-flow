@@ -142,6 +142,12 @@ node js installation:<br>
         remotesigned (good fo server and cordova)
         allsigned (not raccomended)```
 
+  - install [Policy Parse](https://npm.io/package/csp-parse) <br>
+    :: `npm install csp-parse` <br>
+  - install [Cordova Cache](https://www.npmjs.com/package/cordova-plugin-cache) <br>
+    :: ` npm i cordova-plugin-cache` <br>
+  - ~~install [cleartext-traffic](https://www.npmjs.com/package/cordova-plugin-enable-cleartext-traffic)~~<br>
+    ~~:: `cordova plugin add cordova-plugin-enable-cleartext-traffic`~~<br>
   - install [files](https://github.com/apache/cordova-plugin-file/)<br>
     :: `cordova plugin add cordova-plugin-file` <br>
   - install [battery status](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-battery-status/) <br>:: `cordova plugin add cordova-plugin-battery-status`
@@ -153,10 +159,6 @@ node js installation:<br>
     ::  `cordova plugin add cordova-plugin-globalization`
   - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>
     :: `cordova plugin add cordova-plugin-geolocation` <br>
-  - install [Policy Parse](https://npm.io/package/csp-parse) <br>
-    :: `npm install csp-parse` <br>
-  - install [Cordova Cache](https://www.npmjs.com/package/cordova-plugin-cache) <br>
-    :: ` npm i cordova-plugin-cache` <br>
   - if necessary install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) <br>
     :: `cordova plugin add cordova-plugin-whitelist` <br>
   - install [browser](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-inappbrowser/) <br>
