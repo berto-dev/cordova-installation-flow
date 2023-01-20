@@ -21,7 +21,7 @@ It's based on windows/linux workflow<br>
 
 - install Java JDK (tested on windows) (under test in 2023) : <br>
 
-  - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
+  - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads/#jdk19-windows) (or [v15](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html) in case of grandle errors)<br>
     <sub><sup>[retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
   - SDK and tools:
     - ~~[download "Command line tools only"](https://developer.android.com/studio/#downloads) (it's on end of page) and copy it into "%ProgramFiles%\Android\"<br>open cmd (administrator) and enter in folder `cd %ProgramFiles%\Android\cmdline-tools\bin` and get list with <kbd>sdkmanager --list</kbd>, so digit `sdkmanager "platform-tools" "platforms;android-NN"` (NN is latest number you can see)~~
