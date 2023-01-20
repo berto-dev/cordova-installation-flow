@@ -19,9 +19,6 @@ It's based on windows/linux workflow<br>
 ### - Install **Andriod Assets**:<br>
 <sup>[(old way here)](https://www.andreszsogon.com/setting-up-your-environment-for-apache-cordova-apps/)</sup><br>
 
-- unlock windows ExecutionPolicy:<br>
-  Open powershell in administration mode and write: Set-ExecutionPolicy RemoteSigned, press enter, set Y and press enter again. close powershell.
-
 - install Java JDK (tested on windows) (under test in 2023) : <br>
 
   - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads)<br>
