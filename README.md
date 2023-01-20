@@ -21,8 +21,8 @@ It's based on windows/linux workflow<br>
 
 - install Java JDK (tested on windows) (under test in 2023) : <br>
 
-  - get the [installer JDK resource](https://www.oracle.com/java/technologies/downloads/#jdk19-windows)<br>
-    <i>Warning! => Gradle builder not support java major of v16, it's better to install: [JDK v15 installer](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)</i><br>
+  - get the [installer latest JDK resource](https://www.oracle.com/java/technologies/downloads/#jdk19-windows) <i>*not recommended</i><br>
+    <i>Recommended => Gradle builder not support java major of v16, it's better to install: [JDK v15 installer](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)</i><br>
     <sub><sup>[more retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
   - SDK and tools:
     - ~~[download "Command line tools only"](https://developer.android.com/studio/#downloads) (it's on end of page) and copy it into "%ProgramFiles%\Android\"<br>open cmd (administrator) and enter in folder `cd %ProgramFiles%\Android\cmdline-tools\bin` and get list with <kbd>sdkmanager --list</kbd>, so digit `sdkmanager "platform-tools" "platforms;android-NN"` (NN is latest number you can see)~~
@@ -34,9 +34,9 @@ It's based on windows/linux workflow<br>
     - Click the properties
     - Select Advanced System Settings
     - Select Environment Variables:
-      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and `%ProgramFiles%\Java\jdk-18.0.1.1` (or jdk-15.0.2 for better retrocompatibility)
-      - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and `%LOCALAPPDATA%\Android\Sdk` (put below all)
-      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\Sdk` (put below all)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and `%LOCALAPPDATA%\Android\sdk` (put below all)
+      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\sdk` (put below all)
+      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and `%ProgramFiles%\Java\jdk-15.0.2\bin` (jdk-18.0.1.1\bin or latest get risk of retrocompatibility issue)
       - on *SYSTEM VARIABLE* click new and add *JRE_HOME* and `%ProgramFiles%\Android\Android Studio\jre` (put below all)
       - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and `-Xmx512M`
       - on *SYSTEM VARIABLE* click on *PATH* and add:
