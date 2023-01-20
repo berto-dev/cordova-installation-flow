@@ -53,7 +53,8 @@ It's based on windows/linux workflow<br>
 
   - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and...<br>
     - on *SYSTEM VARIABLE* click on *PATH* and add "%ProgramFiles%\Gradle\bin"
-    - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v`
+    - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v` 
+    - on terminal enter `gradle help --scan` for all dep issue
 
 - ANDROID SDK ASSET (in windows) (under test):<br>
   /!\ NOT GET android 10 for retrocompatibility issue! Remain in 9 (the classic released in cordova installation) and...
