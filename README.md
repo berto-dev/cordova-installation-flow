@@ -28,6 +28,8 @@ It's based on windows/linux workflow<br>
     - ~~[download "Command line tools only"](https://developer.android.com/studio/#downloads) (it's on end of page) and copy it into "%ProgramFiles%\Android\"<br>open cmd (administrator) and enter in folder `cd %ProgramFiles%\Android\cmdline-tools\bin` and get list with <kbd>sdkmanager --list</kbd>, so digit `sdkmanager "platform-tools" "platforms;android-NN"` (NN is latest number you can see)~~
     - [install android studio](https://developer.android.com/studio)
     - [copy Platform Tools](https://developer.android.com/studio/releases/platform-tools) into "%USERPROFILE%\AppData\Local\Android\sdk\" <i>(if not exist, make it)</i>
+    -  [install android build tools](https://www.npmjs.com/package/android-build-tools) via terminal:<br>
+        `:: npm install android-build-tools -g`<br>
     -  lounch android studio and finish all steps (or bypass it and go in welcome screen into "more actions/sdk manager") for automatic install latest sdk
   - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
     - Right click Computer
