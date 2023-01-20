@@ -3,7 +3,7 @@
 
 ---
 
-## INSTALLATION OF CORDOVA<br>
+## INSTALLATION OF CORDOVA (UPDATE 2023)<br>
 <br>
 A pipelines it's a simple step by step roles for make somethings better.<br>
 This file is a simple annotations for custom installation of  basic environment for *cordova + cordova assets + extras*.<br>
@@ -21,31 +21,35 @@ It's based on windows/linux workflow<br>
 
 - install Java JDK (tested on windows) (under test in 2023) : <br>
 
-  - get the [installer latest JDK resource](https://www.oracle.com/java/technologies/downloads/#jdk19-windows) <i>*not recommended</i><br>
-    <i>Recommended => Gradle builder not support java major of v16, it's better to install: [JDK v15 installer](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)</i><br>
-    <sub><sup>[more retro-compatibility {*why this?}](https://stackoverflow.com/questions/53733312/where-is-jre-11) assets [find & install JDK 10](https://jdk.java.net/archive/) & [installer JRE 10 resource](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)</sup></sub><br>
+  - Gradle builder not support java major of v16 so... it's better to install: [JDK v15 installer](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)</i><br>
+    <sub><sup>get the [latest JDK resource](https://www.oracle.com/java/technologies/downloads/#jdk19-windows) <i>*not recommended</i></sup></sub><br>
   - SDK and tools:
     - ~~[download "Command line tools only"](https://developer.android.com/studio/#downloads) (it's on end of page) and copy it into "%ProgramFiles%\Android\"<br>open cmd (administrator) and enter in folder `cd %ProgramFiles%\Android\cmdline-tools\bin` and get list with <kbd>sdkmanager --list</kbd>, so digit `sdkmanager "platform-tools" "platforms;android-NN"` (NN is latest number you can see)~~
     - [install android studio](https://developer.android.com/studio)
     - [copy Platform Tools](https://developer.android.com/studio/releases/platform-tools) into "%USERPROFILE%\AppData\Local\Android\sdk\" <i>(if not exist, make it)</i>
-    -  [install android build tools](https://www.npmjs.com/package/android-build-tools) via terminal:<br>
-        `:: npm install android-build-tools -g`<br>
-    -  lounch android studio and finish all steps (or bypass it and go in welcome screen into "more actions/sdk manager") for automatic install latest sdk
+    -  lounch android studio and finish all standard sdk steps (or bypass it and go on next step)
+    -  install android SDK version and build tools from Android Studio:<br>
+        - Open AS, click on "more actions">"SDKMANAGER"
+        - on left, find "Apparence">"System settings">"Android SDK"
+        - select on SDK PLATFORM TAB "Android 10 (api level 29)"
+        - select on SDK TOOLS TAB > "Android SDK Build Tools" > "30.0.3"
+    
   - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
     - Right click Computer
     - Click the properties
     - Select Advanced System Settings
     - Select Environment Variables:
       - on *SYSTEM VARIABLE* click new and add *ANDROID_SDK_ROOT* and `%LOCALAPPDATA%\Android\sdk` (put below all)
-      - on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\sdk` (put below all)
-      - on *SYSTEM VARIABLE* click new and add JAVA_HOME and `%ProgramFiles%\Java\jdk-15.0.2\bin` (jdk-18.0.1.1\bin or latest get risk of retrocompatibility issue)
-      - on *SYSTEM VARIABLE* click new and add *JRE_HOME* and `%ProgramFiles%\Android\Android Studio\jre` (put below all)
+      - ~~on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\sdk` (put below all)~~
+      - on *SYSTEM VARIABLE* click new and add *JAVA_HOME* and `%ProgramFiles%\Java\jdk-15.0.2` (latest jdk have high risks of compatibility issue)
+      - ~~on *SYSTEM VARIABLE* click new and add *JRE_HOME* and `%ProgramFiles%\Android\Android Studio\jre` (put below all)~~
       - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and `-Xmx512M`
       - on *SYSTEM VARIABLE* click on *PATH* and add:
         - `%JAVAHOME%\bin`<br>
-          if necessary:
-        - `%LOCALAPPDATA%\Android\Sdk\platform-tools`
-        - `%LOCALAPPDATA%\Android\Sdk\tools\emulator`
+        - `%ANDROID_SDK_ROOT%\platform-tools`<br>
+        - `%ANDROID_SDK_ROOT%\build-tools\33.0.1`<br>
+          if necessary:<br>
+        - `%LOCALAPPDATA%\Android\Sdk\tools\emulator`<br>
         - ~~`%LOCALAPPDATA%\Android\Sdk\cmdline-tools\latest\bin`~~
     - open terminal and verify `java -version`
 
