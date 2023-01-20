@@ -156,12 +156,12 @@ node js installation:<br>
     ::  `cordova plugin add cordova-plugin-globalization`
   - install [Geo Localization](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-geolocation/) <br>
     :: `cordova plugin add cordova-plugin-geolocation` <br>
-  - if necessary install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) <br>
+  - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>
+     :: `cordova plugin add cordova-plugin-vibration` <br>
+  - install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) (probably you not need of this after cordova 10) <br>
     :: `cordova plugin add cordova-plugin-whitelist` <br>
   - install [browser](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-inappbrowser/) <br>
      :: `cordova plugin add cordova-plugin-inappbrowser` <br>
-  - install [Vibration](https://cordova.apache.org/docs/en/6.x/reference/cordova-plugin-vibration/) <br>
-     :: `cordova plugin add cordova-plugin-vibration` <br>
      <br>
   - if you can:
      - image comunication fix for android -> [cleartext traffic 1](https://www.npmjs.com/package/cordova-plugin-enable-cleartext-traffic) or [cleartext traffic 2](https://www.npmjs.com/package/cordova-plugin-cleartext) or [Stackoverflow discussion](https://stackoverflow.com/questions/54752716/why-am-i-seeing-neterr-cleartext-not-permitted-errors-after-upgrading-to-cordo)
