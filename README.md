@@ -16,7 +16,7 @@ It's based on windows/linux workflow<br>
 
 ---
 
-### - Install **Andriod Assets**:<br>
+### - Install **Andriod Assets** (windows/linux):<br>
 <sup>[(old way here)](https://www.andreszsogon.com/setting-up-your-environment-for-apache-cordova-apps/)</sup><br>
 
 - install Java JDK (tested on windows) (under test in 2023) : <br>
@@ -34,7 +34,7 @@ It's based on windows/linux workflow<br>
         - select on SDK PLATFORM TAB "Android 10 (api level 29)"
         - select on SDK TOOLS TAB > "Android SDK Build Tools" > "30.0.3"
     
-  - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-windows/) (similar to step below)
+  - in windows: set [JAVA_HOME](https://www.youtube.com/watch?v=D1yv94g1e48) / [article](https://tech.amikelive.com/node-533/how-to-install-java-sdk-on-  windows/) (similar to step below)
     - Right click Computer
     - Click the properties
     - Select Advanced System Settings
@@ -53,15 +53,14 @@ It's based on windows/linux workflow<br>
         - ~~`%LOCALAPPDATA%\Android\Sdk\cmdline-tools\latest\bin`~~
     - open terminal and verify `java -version`
 
-- install gradle binary:
+  - install gradle binary:
 
-  - on linux/mac: <br>
-    get it on: [gradle.org/install "Binary-only"](https://gradle.org/install/) and set it "Linux & MacOS users" on page open env with: *Step 3. Configure your system environment*
+    - in linux: <br> get it on: [gradle.org/install "Binary-only"](https://gradle.org/install/) and set it "Linux & MacOS users" on page open env with: *Step 3. Configure your system environment*
 
-  - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and...<br>
-    - on *SYSTEM VARIABLE* click on *PATH* and add "%ProgramFiles%\Gradle\bin"
-    - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v` 
-    - on terminal enter `gradle help --scan` for all dep issue
+    - in windows: [gradle.org/install "Binary-only"](https://gradle.org/install/), rename folder in <i>Grandle</i> and copy it into "%ProgramFiles%\Gradle\bin" (or simple C: Grandle) and...<br>
+      - on *SYSTEM VARIABLE* click on *PATH* and add "%ProgramFiles%\Gradle\bin"
+      - on terminal enter `cd %ProgramFiles%\Gradle\bin` and verify `gradle -v` 
+      - on terminal enter `gradle help --scan` for all dep issue
 
 - ANDROID SDK ASSET (in windows) (under test):<br>
   /!\ NOT GET android 10 for retrocompatibility issue! Remain in 9 (the classic released in cordova installation) and...
@@ -71,28 +70,59 @@ It's based on windows/linux workflow<br>
   - now on SDK Tools tab remove all! and check only 3.0.3 version.
   - test it in cleaned, new, cordova app with cordova build android; not recognized? cordova platform add android@7.1.1 and readd the 9.1;
 
+- Install Node JS:
+  - in windows:
+    - [get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and after reboot if system run command:<br>		:: `nvm install --lts` or `nvm install latest`<br>		after install:<br>		:: `nvm use --lts` or `nvm use latest`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
+   - Check node istallation: `$ node -v`<br>
+   - check if NPM is installed: `$ npm -v` <br>
+   - if not installer run command: `$npm install -g npm@latest`<br>
+
+  - in linux:
+  - find your distro command [here](https://nodejs.org/en/download/package-manager), for Arch is: `$pacman -S nodejs npm` and nvm is in [AUR](https://aur.archlinux.org/packages/nvm)
+
 <br>
 
 ### - Install **IOS Assets**:
 
-<br>
+- via Apple PC: <br>
 
-> *Although it's only for compiling, I would recommend an hackintosh on a dedicated partition due the poor performance of vm. However...*
+  - install [X-CODE](https://apps.apple.com/it/app/xcode/id497799835?mt=12)<br>
+  
+  - Install [NVM](https://github.com/nvm-sh/nvm):<br>
+    '$ ls -a and check if exist action profile ”zshrc”… if not: $ touch .zshrc'<br>
+    '$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'<br>
+    '$ source .zshrc'<br>
+    '$ nvm'<br>
+    '$ nvm install node --lts'<br>
+    '$ nvm use node'<br>
+    '$ nvm -v && node -v && npm -vv'<br>
 
-<br>
+  - Install Cordova and connect it to xcode:<br>
+	  '$ num install cordova -g'<br>
+	  '$ xcode-select --install'<br>
 
-- Follow Installation [macos-virtualbox-installation-flow](https://github.com/bertz-tech/macos-virtualbox-installation-flow)<br>
+  - Install brew and cocoa for iOS deploy:<br>
+  	'$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'<br>
+	  '$ brew install ios-deploy'<br>
+  	'$ sudo gem install cocoapods'<br>
+  
+  - In your project, after install iOS platform, into platforms/iOS folder, you can find <i>.xcodeproj</i> and open it with Xcode by double click or command: '$ open ./platforms/ios/YOUR_APP_NAME.xcworkspace/'. I suggest a better way (prepare,update and open): '$ cordova prepare ios && open -a Xcode platforms/ios'<br>
 
-- Update system on latest version (BigSur1.1.3 or Monteray)<br>
 
-- now install [xcode](https://cordova.apache.org/docs/en/10.x/guide/platforms/ios/index.html#installing-the-requirements) via apple store<br>
+- via virtual OS: <br><sup>Although it's only for compiling, I would recommend an hackintosh on a dedicated partition due the poor performance of vm or Apple Pc, however...<sup> <br>
 
-- Sync in your VSCode or Atom and other (exemple your browser)<br>
+  - Follow Installation [macos-virtualbox-installation-flow](https://github.com/bertz-tech/macos-virtualbox-installation-flow)<br>
 
-- now install cordova on mac:<br>
-  > install node and npm https://treehouse.github.io/installation-guides/mac/node-mac.html<br>
-  > :: 'sudo npm install -g cordova'<br>
-  > ... coming soon<br>
+  - Update system on latest version (BigSur1.1.3 or Monteray)<br>
+
+  - now install [xcode](https://cordova.apache.org/docs/en/10.x/guide/platforms/ios/index.html#installing-the-requirements) via apple store<br>
+
+  - Sync in your VSCode or Atom and other (exemple your browser)<br>
+
+  - now install cordova on mac:<br>
+    > install node and npm https://treehouse.github.io/installation-guides/mac/node-mac.html<br>
+    > :: 'sudo npm install -g cordova'<br>
+    > ... coming soon<br>
 
 <br>
 
@@ -100,20 +130,7 @@ It's based on windows/linux workflow<br>
 
 <br>
 
-node js installation:<br>
-
-- on windows: <br>
-
-  ​		[get NVM](https://docs.microsoft.com/it-it/windows/dev-environment/javascript/nodejs-on-windows) and after reboot if system run command:<br>		:: `nvm install --lts` or `nvm install latest`<br>		after install:<br>		:: `nvm use --lts` or `nvm use latest`<br>		or run [Node Installer](https://nodejs.org/it/)<br>
-  ​		Check node istallation:<br>		:: `node -v`<br>		check if NPM is installed:<br>
-  ​		:: `npm -v` <br>		if not installer run command:
-  ​		:: `npm install -g npm@latest`<br>
-
-  on linux:<br>
-
-  ​	coming soon<br><br><br>
-
-- Now cordova assets:<br>
+- Cordova first assets:<br>
    	:: `npm i -g cordova` (or npm i -g cordova@10.0.0 or 11.0.0 [or other version](https://www.npmjs.com/package/cordova))<br>
    		see all warning of audit fix, if you can...<br>
    		:: `npm audit fix` <br>
@@ -169,7 +186,9 @@ node js installation:<br>
   - install [Whitelist](https://github.com/apache/cordova-plugin-whitelist) (probably you not need of this after cordova 10) <br>
     :: `cordova plugin add cordova-plugin-whitelist` <br>
   - install [browser](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-inappbrowser/) <br>
-     :: `cordova plugin add cordova-plugin-inappbrowser` <br>
+     :: `cordova plugin add cordova-plugin-inappbrowser``
+  - install [statusbar-settings](https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-statusbar/) <br>
+     :: `cordova plugin add cordova-plugin-statusbar``
      <br>
   - if you can:
      - image comunication fix for android -> [cleartext traffic 1](https://www.npmjs.com/package/cordova-plugin-enable-cleartext-traffic) or [cleartext traffic 2](https://www.npmjs.com/package/cordova-plugin-cleartext) or [Stackoverflow discussion](https://stackoverflow.com/questions/54752716/why-am-i-seeing-neterr-cleartext-not-permitted-errors-after-upgrading-to-cordo)
@@ -190,3 +209,8 @@ node js installation:<br>
 - ... waiting next ...<br>
 
 <br>
+
+NOTES:
+- if you try to run a cordova commands (run, build, ecc) before add platforms from zero, Node don’t run that processes. The folder of node_modules need to be empty and refilled from scratch when you download process from hub.
+- Sometimes modules have a problems, try: git rm -r --cached node_modules
+- Other for distribution in App Store: https://www.youtube.com/watch?v=y8_CGVL9INM
