@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.apache.cordova.MYAPPNAME" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MYAPPNAME</name>
+    <preference name="hostname" value="MYAPPNAMEclient" />
+    <description>
+        Prenota il tuo posto in spiaggia con pochi semplici click.
+    </description>
+    <author email="dev@MYAGENCYNAME.com" href="http://MYAGENCYNAME.com">
+        shape digital group
+    </author>
+
+    <content src="index.html" />
+
+    <allow-navigation href="*" />
+    <allow-navigation href="about:*" />
+    <allow-navigation href="https://*" />
+    <allow-navigation href="http://*" />
+
+    <!-- <allow-navigation href="*MYAPPNAMEclient*" /> -->
+    <!-- <allow-navigation href="https://example.com/*" /> -->
+    <!-- <allow-navigation href="http://localhost/*" />
+    <allow-navigation href="https://localhost/*" />
+    <allow-navigation href="http://MYAPPNAME.it/*" />
+    <allow-navigation href="https://MYAPPNAME.it/*" /> -->
+    <allow-navigation href="*localhost*" />
+    <allow-navigation href="*MYAPPNAME.it*" />
+    <allow-navigation href="*stripe.com*" />
+
+    <access origin="*" />
+    <access origin="content://*" />
+    <access origin="cdvfile://*" />
+    <access origin="file://*" />
+    <access origin="file:*" />
+    <access origin="*localhost*" />
+    <access origin="*MYAPPNAME.it" />
+    <access origin="*stripe.com*" />
+    <access origin="*dev-app-MYAPPNAME*" />
+
+    <allow-intent href="*" />
+    <allow-intent href="http://*" />
+    <allow-intent href="https://*" />
+    <allow-intent href="*localhost*" />
+    <allow-intent href="*MYAPPNAME.it*" />
+    <allow-intent href="*stripe.com*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <preference name="Scheme" value="http" />
+    <preference name="MixedContentMode" value="2" />
+    <preference name="NativeXHRLogging" value="full"/>
+    <preference name="permissions" value="none" />
+
+    <preference name="BackgroundColor" value="#000" />
+    <preference name="StatusBarBackgroundColor" value="#ffffff" />
+    <preference name="StatusBarStyle" value="blackopaque" /><!--lightcontent-->
+
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="WebViewBounce" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+
+    <preference name="orientation" value="portrait"/>
+    <preference name="SplashShowOnlyFirstTime" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true"/>
+
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+        <icon density="ldpi" src="./www/appicons/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="./www/appicons/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="./www/appicons/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="./www/appicons/android/icon/drawable-xxxhdpi-icon.png" />
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </platform>
+
+    <platform name="ios">
+
+        <!-- // all for IOS: https://cordova.apache.org/docs/en/11.x/config_ref/ -->
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="iosPersistentFileLocation" value="Compatibility" />
+        <!-- <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" /> -->
+
+        <!-- <preference name="WKPort" value="8080"/>
+        <preference name="UseScheme" value="false"/> -->
+
+
+        <preference name="EnableViewportScale" value="false"/>
+        <preference name="SuppressesIncrementalRendering" value="true"/>
+        <preference name="GapBetweenPages" value="0"/>
+        <preference name="PageLength" value="0"/>
+        <preference name="PaginationMode" value="unpaginated"/>
+        <preference name="UIWebViewDecelerationSpeed" value="fast" />
+        <!-- <preference name="OverrideUserAgent" value="Mozilla/5.0 My Browser" /> -->
+        <preference name="target-device" value="universal" />
+        <preference name="deployment-target" value="12.0" />
+        <preference name="WKWebViewOnly" value="true" />
+        <preference name="CordovaWebViewEngine" value="CDVWebViewEngine" />
+        <preference name="CordovaDefaultWebViewEngine" value="CDVWebViewEngine" />
+        <preference name="SuppressesLongPressGesture" value="true" />
+        <preference name="Suppresses3DTouchGesture" value="true" />
+
+        <!--
+            <preference name="FadeSplashScreen" value="true" />
+            <preference name="FadeSplashScreenDuration" value=".25" />
+            <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+            <preference name="KeyboardShrinksView" value="false" />
+            <preference name="MediaTypesRequiringUserActionForPlayback" value="false" />
+            <preference name="ShowSplashScreenSpinner" value="true" />
+            <preference name="SuppressesIncrementalRendering" value="false" />
+        -->
+
+
+        <!-- <splash src="./www/appspash/ios/Default@2x~universal~anyany.png" /> -->
+        <!--
+            <splash src="./www/splash/ios/LaunchImage~iphone_640x960.png" />
+            <splash src="./www/splash/ios/LaunchImage-750@2x~iphone6-portrait_750x1334.png" />
+            <splash src="./www/splash/ios/LaunchImage-828@2x~iphoneXr-portrait_828x1792.png" />
+            <splash src="./www/splash/ios/LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png" />
+            <splash src="./www/splash/ios/LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png" />
+            <splash src="./www/splash/ios/LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png" />
+            <splash src="./www/splash/ios/LaunchImage-568h@2x~iphone_640x1136.png" />
+            <splash src="./www/splash/ios/LaunchImage~iphone-320x480.png" />
+        -->
+
+        <icon height="180" src="./www/appicons/ios/icon/icon-60@3x.png" width="180" />
+        <icon height="60" src="./www/appicons/ios/icon/icon-60.png" width="60" />
+        <icon height="120" src="./www/appicons/ios/icon/icon-60@2x.png" width="120" />
+        <icon height="76" src="./www/appicons/ios/icon/icon-76.png" width="76" />
+        <icon height="152" src="./www/appicons/ios/icon/icon-76@2x.png" width="152" />
+        <icon height="40" src="./www/appicons/ios/icon/icon-40.png" width="40" />
+        <icon height="80" src="./www/appicons/ios/icon/icon-40@2x.png" width="80" />
+        <icon height="57" src="./www/appicons/ios/icon/icon.png" width="57" />
+        <icon height="114" src="./www/appicons/ios/icon/icon@2x.png" width="114" />
+        <icon height="72" src="./www/appicons/ios/icon/icon-72.png" width="72" />
+        <icon height="144" src="./www/appicons/ios/icon/icon-72@2x.png" width="144" />
+        <icon height="29" src="./www/appicons/ios/icon/icon-small.png" width="29" />
+        <icon height="58" src="./www/appicons/ios/icon/icon-small@2x.png" width="58" />
+        <icon height="50" src="./www/appicons/ios/icon/icon-50.png" width="50" />
+        <icon height="100" src="./www/appicons/ios/icon/icon-50@2x.png" width="100" />
+
+    </platform>
+
+</widget>
