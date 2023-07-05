@@ -43,7 +43,7 @@ It's based on windows/linux workflow<br>
       - ~~on *SYSTEM VARIABLE* click new and add *ANDROID_HOME* and `%LOCALAPPDATA%\Android\sdk` (put below all)~~
       - on *SYSTEM VARIABLE* click new and add *JAVA_HOME* and `%ProgramFiles%\Java\jdk-15.0.2` (latest jdk have high risks of compatibility issue)
       - ~~on *SYSTEM VARIABLE* click new and add *JRE_HOME* and `%ProgramFiles%\Android\Android Studio\jre` (put below all)~~
-      - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and `-Xmx512M`
+      - on *SYSTEM VARIABLE* click new and add *_JAVA_OPTIONS* and `-Xmx512M` or better: `-Xmx4608m` (or more memory)
       - on *SYSTEM VARIABLE* click on *PATH* and add:
         - `%JAVAHOME%\bin`<br>
         - `%ANDROID_SDK_ROOT%\platform-tools`<br>
