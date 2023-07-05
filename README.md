@@ -210,6 +210,10 @@ It's based on windows/linux workflow<br>
 
 <br>
 
+NOTES FOR PRODUCTION
+- IT BETTER TO START WITH IOS
+- ANDROID NEED IN cofing.xml `xmlns:android="http://schemas.android.com/apk/res/android"` in widget declaration
+
 NOTES:
 - if you try to run a cordova commands (run, build, ecc) before add platforms from zero, Node don’t run that processes. The folder of node_modules need to be empty and refilled from scratch when you download process from hub.
 - Sometimes modules have a problems, try: git rm -r --cached node_modules
